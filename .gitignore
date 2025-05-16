@@ -1,23 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+#ignore node modules
 /node_modules
-/.pnp
-.pnp.js
+/server/node_modules
 
-# testing
+#ignore builds
+/build
+/server/build
+/dist
+
+#ignore test coverage
 /coverage
 
-# production
-/build
+#ignore environment files
+.env
+.env.*.local
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+#ignore logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#ignore macOS
+.DS_Store
+
+#ignore VSCode files
+.vscode/
+
+#ignore SQLite DB
+*.sqlite
+*.db
+
+#ignore backup files
+*.bak

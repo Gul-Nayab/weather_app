@@ -1,38 +1,75 @@
 .App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  padding: 2rem;
+  background-color: #121535;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 7rem;
+}
+
+.Input {
+  margin-bottom: 1.5rem;
+}
+
+.Input input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Input button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #537fad;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.Input button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Input select {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Display {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #537fad;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  font-size: 1rem;
+}
+
+.weather-icon {
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
 }
