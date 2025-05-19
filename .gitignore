@@ -9,6 +9,8 @@
 
 #ignore test coverage
 /coverage
+/test-reports
+*.xml
 
 #ignore environment files
 .env
